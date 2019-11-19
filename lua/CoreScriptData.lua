@@ -207,7 +207,7 @@ Hooks:Add("BeardLibCreateScriptDataMods", "SCLECallBeardLibSequenceFuncs", funct
 		BeardLib:ReplaceScriptData("mods/restoration-mod-dev/scriptdata/uk_job_new.custom_xml", "custom_xml", "environments/pd2_env_mid_day/pd2_env_mid_day", "environment")
 	end
 	
-	if Global.load_level == true and Global.game_settings.level_id == "family_res" then
+	if Global.load_level == true and Global.game_settings.level_id == "family" then
 		BeardLib:ReplaceScriptData("mods/restoration-mod-gold/scriptdata/family.custom_xml", "custom_xml", "environments/pd2_env_jew_street/pd2_env_jew_street", "environment")
 		BeardLib:ReplaceScriptData("mods/restoration-mod-dev/scriptdata/family.custom_xml", "custom_xml", "environments/pd2_env_jew_street/pd2_env_jew_street", "environment")
 	end
@@ -270,6 +270,7 @@ end)
 			"sky_1930_sunset_heavy_clouds",
             "sky_1846_low_sun_nice_clouds",
             "sky_0902_overcast",
+			"sky_1345_clear_sky",
 			"sky_0200_night_moon_stars",
 			"sky_2000_twilight_mad",
 			"sky_2100_moon",

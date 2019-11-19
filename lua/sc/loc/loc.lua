@@ -66,8 +66,8 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization", function(loc)
 		["menu_difficulty_suicidal"] = "Deathwish 145+",
 		["bm_wp_upg_a_halfthatkit"] = "I'll Take Double That Kit",
 		["bm_wp_upg_a_halfthatkit_desc"] = "ADDS A 20% MOVEMENT SPEED PENALTY WHILE THE WEAPON IS EQUIPPED.",
-		["loot_sc"] = "SC Mod",
-		["loot_sc_desc"] = "THIS IS AN SC MOD ITEM!",
+		["loot_sc"] = "Restoration Overhaul",
+		["loot_sc_desc"] = "THIS IS A RESTORATION OVERHAUL ITEM!",
 		["sc_menu"] = "SC's Mod",
 		["sc_menu_desc"] = "Options for SC's mod.",
 		["sc_deploy_title"] = "Deployable Changes",
@@ -127,12 +127,22 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization", function(loc)
 		
 		--Player Outfits
 		["bm_suit_loud_suit"] = "Combat Harness",
-		["bm_suit_loud_suit_desc"] = "This is a suit for when you don't mind the heat. It's lightweight, easy to move in, and built for utility. Good choice for going in for a smash and grab, or when hitting heavily fortified mercenary facilities.\n\nThis outfit can be worn on loud heists.",		
+		["bm_suit_loud_suit_desc"] = "This is a suit for when you don't mind the heat. It's lightweight, easy to move in, and built for utility. Good choice for going in for a smash and grab, or when hitting heavily fortified mercenary facilities.",		
 		
 		["bm_suit_sunny"] = "Sunny-Side Robber",
 		["bm_suit_sunny_desc"] = "Sometimes you just want to roll up your sleeves and do a little heisting.",		
 		
+		["bm_suit_pool"] = "Bodhi's Pool Repair Uniform",
+		["bm_suit_pool_desc"] = "Sharp threads for pool repair men...",	
+		
+		["bm_suit_prison"] = "Prison Suit",
+		["bm_suit_prison_desc"] = "You've been taken into custody!",		
 
+		["bm_suit_var_jumpsuit_flecktarn"] = "Flecktarn Camo",
+		["bm_suit_var_jumpsuit_flecktarn_desc"] = "A classic camo used by two European countries, proven battle-effective by its ability to blend into forested environments easily. It sure as hell doesn't work in urban areas, but in rural ones it does wonders to trick people's eyes.",		
+
+		["bm_suit_var_jumpsuit_flatgreen"] = "Gooey Green",
+		["bm_suit_var_jumpsuit_flatgreen_desc"] = "This suit was rumored to have belonged to one member of a trio of psychotic criminals, having been recovered near a destroyed garbage truck that was presumed to have been involved in a bloody heist on a GenSec armored car, which left numerous SWAT members dead and quite a few wounded. The identity of these criminals are still shrouded in mystery, as most evidence was destroyed with the Garbage Truck, only leaving this jumpsuit.",				
 		--Safe House Test
 		--["dialog_safehouse_text"] = "You haven't visited the safe house yet. Would you like to go there now?",
 		["dialog_safehouse_text"] = "You haven't visited the safe house yet. You should, as you might find something new.\nWould you like to go there now?",

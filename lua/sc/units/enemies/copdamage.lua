@@ -1308,6 +1308,19 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 
 		return result
 	end
+	
+	local _on_damage_received_original = CopDamage._on_damage_received
+	function CopDamage:_on_damage_received(damage_info)
+		_on_damage_received_original(self, damage_info)
+		
+		local dmg_chk = not self._dead and not self._unit:base():has_tag("special") and self._health > 0
+	
+		if damage_info.damage and damage_info.damage > 0.01 and dmg_chk then
+			if not damage_info.result_type or damage_info.result_type ~= "healed" and damage_info.result_type ~= "death" then
+				self._unit:sound():say("x01a_any_3p", nil, nil, nil, nil)
+			end
+		end
+	end
 		
 	function CopDamage:damage_mission(attack_data)
 		local char_tweak = tweak_data.character[self._unit:base()._tweak_table]
