@@ -210,6 +210,11 @@ Hooks:Add("LocalizationManagerPostInit", "SC_Localization_Weapons", function(loc
 		["bm_wp_upg_bp_lmg_lionbipod_desc"] = "Deploy/Undeploy by pressing the [Bipod Key/Alt-Fire Key]",
 		--String override for the stungun--
 		["bm_melee_taser_info"] = "Device that electrocutes and interrupts targets on touch once every 15 seconds.",
+		["bm_melee_fight_info"] = "A flurry of blows, or one great shove.",
+		["bm_melee_bleed_info"] = "Causes target to bleed, dealing heavy damage over time.",
+		["bm_melee_headshot_info"] = "Deals 50% more damage on headshots.",
+		["bm_melee_super_headshot_info"] = "Deals 100% more damage on headshots.",
+		["bm_melee_shield_knock"] = "Knocks down shields when fully charged.",
 		-- Renamed default weapons
 		["bm_wp_corgi_b_short"] = "MSG Barrel",
 		["menu_es_rep_upgrade"] = "",				

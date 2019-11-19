@@ -481,7 +481,11 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 			weapon:update_spin()
 		end
 
-		self._melee_tase_cooldown = math.max(0.0, self._melee_tase_cooldown - dt)
+		if self._melee_tase_cooldown then
+			self._melee_tase_cooldown = math.max(0.0, self._melee_tase_cooldown - dt)
+		else 
+			self._melee_tase_cooldown = 0.0 --Sometimes randomly gets set to nil because coupling is fun :)
+		end
 
 		return update_original(self, t, dt, ...)
 	end
@@ -675,7 +679,7 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 			managers.game_play_central:physics_push(col_ray)
 			
 			local character_unit, shield_knock
-			local can_shield_knock = managers.player:has_category_upgrade("player", "shield_knock")
+			local can_shield_knock = managers.player:has_category_upgrade("player", "shield_knock") or (special_weapon == "shield_knock" and charge_lerp_value > 0.9)
 			if can_shield_knock and hit_unit:in_slot(8) and alive(hit_unit:parent()) then
 				shield_knock = true
 				character_unit = hit_unit:parent()
@@ -722,6 +726,7 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 					dmg_multiplier = 0.1
 				end				
 				
+				action_data.headshot_bonus = tweak_data.blackmarket.melee_weapons[melee_entry].headshot_bonus
 				action_data.damage = shield_knock and 0 or damage * dmg_multiplier
 				action_data.damage_effect = damage_effect
 				action_data.attacker_unit = self._unit

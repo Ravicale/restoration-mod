@@ -85,6 +85,7 @@
 		<hook file="sc/managers/enemymanager.lua" source_file="lib/managers/enemymanager"/>
 		<hook file="sc/managers/statisticsmanager.lua" source_file="lib/managers/statisticsmanager"/>
 		<hook file="sc/managers/playermanager.lua" source_file="lib/managers/playermanager"/>
+		<hook file="sc/managers/dotmanager.lua" source_file="lib/managers/dotmanager"/>
 		<hook file="sc/managers/groupaistatebesiege.lua" source_file="lib/managers/group_ai_states/groupaistatebesiege"/>
 		<hook file="sc/managers/groupaistatebase.lua" source_file="lib/managers/group_ai_states/groupaistatebase"/>
 		<hook file="sc/managers/blackmarketgui.lua" source_file="lib/managers/menu/blackmarketgui"/>

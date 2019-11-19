@@ -596,6 +596,9 @@ if SC and SC._data.sc_player_weapon_toggle or restoration and restoration.Option
 		local headshot_multiplier = 1
 		if attack_data.attacker_unit == managers.player:player_unit() then
 			headshot_multiplier = managers.player:upgrade_value("weapon", "passive_headshot_damage_multiplier", 1)
+			if attack_data.headshot_bonus then
+				headshot_multiplier = headshot_multiplier * attack_data.headshot_bonus
+			end
 			if self._char_tweak and self._char_tweak.priority_shout then
 				damage = damage * managers.player:upgrade_value("weapon", "special_damage_taken_multiplier", 1)
 			end
