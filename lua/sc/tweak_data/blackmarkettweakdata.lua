@@ -330,6 +330,20 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 			global_value = "rest",
 			texture_bundle_folder = "mods"
 		}
+		
+		self.masks.omnia_mask = {}
+		self.masks.omnia_mask.unit = "units/pd2_mod_sharks/masks/msk_hockey_sc/msk_hockey_sc"
+			
+		if Steam:is_user_in_source(Steam:userid(), "103582791465743585") then
+			self.masks.omnia_mask = {
+				unit = "units/pd2_mod_sharks/masks/msk_hockey_sc/msk_hockey_sc",
+				name_id = "bm_msk_omnia",
+				desc_id = "bm_msk_omnia_desc",
+				value = 0,
+				global_value = "rest_omnia",
+				texture_bundle_folder = "mods"
+			}		
+		end
 	end
 	
 	--we all know alligator skin's the best material right--
@@ -476,7 +490,7 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 			head = false,
 			armor = false,
 			body = true,
-			hands = false,
+			hands = true,
 			vest = true
 		}
 		local body_replacement_hands = {
@@ -579,44 +593,44 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 			characters = {}
 		}
 		set_characters_data("loud_suit", characters_male, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_black_gloves, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_tony, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_bodhi, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_jimmy, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_armor,
-			disable_wrists = true,
+			keep_wrists = false,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit_2",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_chains, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_sangres, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
@@ -628,40 +642,40 @@ if SC and SC._data.sc_ai_toggle or restoration and restoration.Options:GetValue(
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_male_big, {
-			body_replacement = body_replacement_armor,
-			third_body_replacement = body_replacement_standard,
-			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
-			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit_male_big/res_acc_loud_suit_male_big"
+			body_replacement = body_replacement_hands,
+			third_body_replacement = body_replacement_armor,
+			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit_2",
+			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit/res_acc_loud_suit"
 		})
 		set_characters_data("loud_suit", characters_worst_addition, {
-			body_replacement = body_replacement_armor,
+			body_replacement = body_replacement_hands,
 			third_body_replacement = body_replacement_standard,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit_male_big/res_acc_loud_suit_male_big"
 		})
 		set_characters_data("loud_suit", characters_female, {
-			body_replacement = body_replacement_armor,
-			third_body_replacement = body_replacement_standard,
+			body_replacement = body_replacement_hands,
+			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
-			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit_female_thin/res_acc_loud_suit_female_thin"
+			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit_female/res_acc_loud_suit_female"
 		})
 		set_characters_data("loud_suit", characters_sydney, {
-			body_replacement = body_replacement_armor,
-			third_body_replacement = body_replacement_standard,
+			body_replacement = body_replacement_hands,
+			third_body_replacement = body_replacement_armor,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit_female_thin/res_acc_loud_suit_female_thin"
 		})
 		set_characters_data("loud_suit", characters_joy, {
-			body_replacement = body_replacement_armor,
-			third_body_replacement = body_replacement_standard,
-			disable_wrists = true,
+			body_replacement = body_replacement_hands,
+			third_body_replacement = body_replacement_armor,
+			keep_wrists = false,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit_2",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit_female_thin/res_acc_loud_suit_female_thin"
 		})
 		set_characters_data("loud_suit", characters_female_big, {
-			body_replacement = body_replacement_armor,
-			third_body_replacement = body_replacement_standard,
-			disable_wrists = true,
+			body_replacement = body_replacement_hands,
+			third_body_replacement = body_replacement_armor,
+			keep_wrists = false,
 			unit = "units/pd2_mod_suits/characters/res_acc_fps_loud_suit/res_acc_fps_loud_suit_2",
 			third_unit = "units/pd2_mod_suits/characters/res_acc_loud_suit_female_big/res_acc_loud_suit_female_big"
 		})	
