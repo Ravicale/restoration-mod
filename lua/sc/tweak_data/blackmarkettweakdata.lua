@@ -2338,7 +2338,7 @@ function BlackMarketTweakData:_init_melee_weapons(...)
 	self.melee_weapons.fists.stats.max_damage_effect = 4
 	self.melee_weapons.fists.stats.charge_time = 0.5
 	self.melee_weapons.fists.stats.range = 125
-	self.melee_weapons.fists.expire_t = 1.0
+	self.melee_weapons.fists.expire_t = 0.5
 	self.melee_weapons.fists.repeat_expire_t = 0.5
 	self.melee_weapons.fists.melee_damage_delay = 0.2
 	self.melee_weapons.fists.stats.concealment = 30
@@ -2350,7 +2350,7 @@ function BlackMarketTweakData:_init_melee_weapons(...)
 	self.melee_weapons.brass_knuckles.stats.min_damage_effect = 4
 	self.melee_weapons.brass_knuckles.stats.max_damage_effect = 6
 	self.melee_weapons.brass_knuckles.stats.charge_time = 0.6
-	self.melee_weapons.brass_knuckles.expire_t = 1.2
+	self.melee_weapons.brass_knuckles.expire_t = 0.7
 	self.melee_weapons.brass_knuckles.repeat_expire_t = 0.65
 	self.melee_weapons.brass_knuckles.stats.range = 125
 	self.melee_weapons.brass_knuckles.stats.concealment = 30
@@ -2464,16 +2464,17 @@ function BlackMarketTweakData:_init_melee_weapons(...)
 	self.melee_weapons.boxcutter.melee_damage_delay = 0.15
 	
 	--Ding Ding--
-	self.melee_weapons.boxing_gloves.speed_mult = 1
-	self.melee_weapons.boxing_gloves.stats.min_damage = 2
-	self.melee_weapons.boxing_gloves.stats.max_damage = 5
-	self.melee_weapons.boxing_gloves.stats.min_damage_effect = 4
-	self.melee_weapons.boxing_gloves.stats.max_damage_effect = 8
-	self.melee_weapons.boxing_gloves.stats.charge_time = 2.5
-	self.melee_weapons.boxing_gloves.stats.range = 120
+	self.melee_weapons.boxing_gloves.speed_mult = 1.6
+	self.melee_weapons.boxing_gloves.stats.min_damage = 1.67
+	self.melee_weapons.boxing_gloves.stats.max_damage = 3.34
+	self.melee_weapons.boxing_gloves.stats.min_damage_effect = 6
+	self.melee_weapons.boxing_gloves.stats.max_damage_effect = 8.99
+	self.melee_weapons.boxing_gloves.stats.charge_time = 0.5
+	self.melee_weapons.boxing_gloves.stats.range = 125
 	self.melee_weapons.boxing_gloves.stats.concealment = 30
 	self.melee_weapons.boxing_gloves.repeat_expire_t = 0.5
-	self.melee_weapons.boxing_gloves.melee_damage_delay = 0.15
+	self.melee_weapons.boxing_gloves.expire_t = 0.5
+	self.melee_weapons.boxing_gloves.melee_damage_delay = 0.2
 
 	--Ayy Hammer--
 	self.melee_weapons.alien_maul.speed_mult = 0.9
@@ -3069,16 +3070,16 @@ function BlackMarketTweakData:_init_melee_weapons(...)
 	self.melee_weapons.taser.melee_damage_delay = 0.1
 	
 	--Thanks Boss--
-	self.melee_weapons.fight.speed_mult = 2.72
+	self.melee_weapons.fight.speed_mult = 2.4
 	self.melee_weapons.fight.info_id = "bm_melee_fight_info"
-	self.melee_weapons.fight.stats.min_damage = 1.66
+	self.melee_weapons.fight.stats.min_damage = 1.67
 	self.melee_weapons.fight.stats.max_damage = 3.34
 	self.melee_weapons.fight.stats.min_damage_effect = 0.0
-	self.melee_weapons.fight.stats.max_damage_effect = 6
-	self.melee_weapons.fight.stats.charge_time = 1.8
+	self.melee_weapons.fight.stats.max_damage_effect = 8.99
+	self.melee_weapons.fight.stats.charge_time = 1.2
 	self.melee_weapons.fight.stats.range = 125
 	self.melee_weapons.fight.stats.remove_weapon_movement_penalty = true
-	self.melee_weapons.fight.expire_t = 0.4
+	self.melee_weapons.fight.expire_t = 0.5
 	self.melee_weapons.fight.repeat_expire_t = 0.15
 	self.melee_weapons.fight.melee_damage_delay = 0.1
 	self.melee_weapons.fight.stats.concealment = 30
@@ -3343,15 +3344,16 @@ function BlackMarketTweakData:_init_melee_weapons(...)
 	--woo free tasers--
 	self.melee_weapons.zeus.special_weapon = "taser"
 	self.melee_weapons.zeus.info_id = "bm_melee_taser_info"
-	self.melee_weapons.zeus.speed_mult = 1.15
+	self.melee_weapons.zeus.speed_mult = 1.2
 	self.melee_weapons.zeus.stats.min_damage = 2.5
 	self.melee_weapons.zeus.stats.max_damage = 5
 	self.melee_weapons.zeus.stats.min_damage_effect = 0
 	self.melee_weapons.zeus.stats.max_damage_effect = 0
-	self.melee_weapons.zeus.stats.charge_time = 2.2
-	self.melee_weapons.zeus.stats.range = 130
+	self.melee_weapons.zeus.stats.charge_time = 0.5
+	self.melee_weapons.zeus.stats.range = 125
+	self.melee_weapons.zeus.expire_t = 0.7
+	self.melee_weapons.zeus.repeat_expire_t = 0.65
 	self.melee_weapons.zeus.stats.concealment = 30
-	self.melee_weapons.zeus.repeat_expire_t = 0.5
 	self.melee_weapons.zeus.melee_damage_delay = 0.2
 
 	--you got blood on my suit--
